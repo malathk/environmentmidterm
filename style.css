@@ -1,0 +1,137 @@
+body {
+    /* background:#cecdf7 ; */
+    font-family: 'Orbitron', sans-serif;
+    margin: 2em;
+        /* cursor: url('https://media.giphy.com/media/3gRWfmZMI0Cb2Hoaye/giphy.gif') default; */
+
+  }
+  
+  h1 {
+    color: #fff679;
+    width: 450px;
+    margin: 30px;
+    background-color: #ffffff;
+    border: 1px solid #ffffff;
+    opacity: 0.6;
+    margin: 2%;
+  }
+  
+
+  .form-radio
+{
+     -webkit-appearance: none;
+     -moz-appearance: none;
+     appearance: none;
+     display: inline-block;
+     position: relative;
+     background-color: #f1f1f1;
+     color: #666;
+     top: 10px;
+     height: 30px;
+     width: 30px;
+     border: 0;
+     border-radius: 30px;
+     cursor: pointer;     
+     margin-right: 10px;
+     margin-left: 10px;
+    
+
+     outline: none;
+}
+.form-radio:checked::before
+{
+     position: absolute;
+     font: 13px/1 'Open Sans', sans-serif;
+     left: 11px;
+     top: 7px;
+     content: '\02143';
+     transform: rotate(40deg);
+}
+.form-radio:hover
+{
+     background-color: #f7f7f7;
+}
+.form-radio:checked
+{
+     background-color: #f1f1f1;
+}
+
+
+.salary{
+ 
+ width: 450px;
+  margin: 30px;
+  background-color: #ffffff;
+  border: 1px solid #ffffff;
+  opacity: 0.6;
+  margin-top:relative ;
+  border-radius: 30px;
+  
+
+}
+
+ 
+  .time{
+
+    width: 450px;
+    margin: 30px;
+    background-color: #ffffff;
+    border: 1px solid #ffffff;
+    opacity: 0.6;
+    margin: 2%;
+    border-radius: 30px;
+}
+  
+.stress{
+
+  width: 450px;
+  margin: 30px;
+  background-color: #ffffff;
+  border: 1px solid #ffffff;
+  opacity: 0.6;
+  margin: 2%;
+  text-align: initial;
+  border-radius: 30px;
+
+  
+}
+ 
+.radio-label{
+
+
+  display:block;
+  margin-left:10%;
+  margin-top:-5%
+}
+  
+ 
+
+  a:link, a:visited {
+    background-color: #fff386;
+    color: white;
+    border-radius: 10px;
+    padding: 14px 25px;
+    text-align: center; 
+    text-decoration: none;
+    display: inline-block;
+  }
+  
+  a:hover, a:active {
+    background-color: #e3ffcf;
+    color: black;
+  }
+
+  #camera,#sensor,#videoElement {
+    position: absolute;
+   left:0;
+   
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+   
+  }
+  #sensor,#videoElement{
+
+    transform: scaleX(-1);
+    filter: FlipH;
+  }
