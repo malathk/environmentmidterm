@@ -2,7 +2,9 @@
 <html>
      <meta charset= "utf-8">
      <link rel="stylesheet" href="style.css" />
-    <script src="script.js" defer></script>
+   
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.0.0/lib/p5.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.10.2/addons/p5.sound.min.js"></script>
 <!-- <head>
     
 <title> quiz</title>
@@ -12,12 +14,10 @@
 
 <body>
    
-    <main id="camera">
-        <canvas id="canvas1"></canvas>
-        <video id="videoElement" autoplay playsinline>
+  <div class= vid>
+        <script src="script2.js" defer></script>
         
-        </video>
-    </main>
+    </div>
   
     <div class="salary">
         <p> 
@@ -26,22 +26,17 @@
             <br>
         </center>
         
-            <input type="radio" name="sal" class= "form-radio" onclick="minimumwage();" value=1>minimum wage
+            <input type="radio" name="sal" class= "form-radio" id= "sal1" onclick="circ();" value=1>minimum wage
             <br>
-            <input type="radio" name="sal" class= "form-radio" onclick="above();" value=2>above minimum wage
+            <input type="radio" name="sal" class= "form-radio"id= "sal2"  onclick="above();" value=2>above minimum wage
         </br>
-            <input type="radio" name="sal" class= "form-radio" onclick= "ok();" value=3>medium high
+            <input type="radio" name="sal" class= "form-radio"id= "sal3"  onclick= "ok();" value=3>medium high
             <br>
-            <input type="radio" name="sal" class= "form-radio" onclick= "good();" value=4>high
+            <input type="radio" name="sal" class= "form-radio" id= "sal4" onclick= "good();" value=4>high
         </br>
     </br>
             </p>
-            <button type="button" onclick="display()"> 
-                Submit
-            </button> 
-            <div id="disp"style= 
-            "color:green; font-size:18px; font-weight:bold;"> 
-        
+          
         </div> 
     </div>
     <div class="time">
@@ -53,20 +48,16 @@
                 <br>
                 including paid unwork and household labor?
             </center>
-            <input type="radio" name="tim"  class= "form-radio" onclick =" draw();"  value=1>10-25
+            <input type="radio" name="tim"  class= "form-radio"  id ="tim1" onclick ="tim1();"  value=1>10-25
             <br>
-            <input type="radio" name="tim" class= "form-radio" value=2>25-35
+            <input type="radio" name="tim" class= "form-radio" id ="tim2" onclick ="tim2();" value=2>25-35
         </br>
-            <input type="radio" name="tim" class= "form-radio" value=3>35-45
+            <input type="radio" name="tim" class= "form-radio"id ="tim3" onclick ="tim3();" value=3>35-45
             <br>
-            <input type="radio" name="tim" class= "form-radio" value=4>45+
+            <input type="radio" name="tim" class= "form-radio" id ="tim4" onclick ="tim4();"  value=4>45+
         </pbr>
             </p>
-            <button type="button" onclick="display2()"> 
-                Submit2
-            </button> 
-            <div id="disp2"style= 
-            "color:green; font-size:18px; font-weight:bold;"> 
+           
         
         </div> 
     </div>
@@ -75,28 +66,23 @@
             <center>
                 How would you describe your stress levels?
             </center>
-            <input type="radio" name="anx" class= "form-radio" value=1> <span class="radio-label">Low, my sleeping and eating habits do not fluctuate, I almost always end up getting things done without panic.</span>
+            <input type="radio" name="anx" class= "form-radio"  id ="stress1" onclick ="stress1();" value=1> <span class="radio-label">Low, my sleeping and eating habits do not fluctuate, I almost always end up getting things done without panic.</span>
             <br>
-            <input type="radio" name="anx" class= "form-radio" value=2><span class="radio-label">Moderate, i binge eat and sweat without exercising when I am stressed.</span>
+            <input type="radio" name="anx" class= "form-radio" id ="stress2" onclick ="stress2();" value=2><span class="radio-label">Moderate, i binge eat and sweat without exercising when I am stressed.</span>
         </br>
-            <input type="radio" name="anx" class= "form-radio" value=3><span class="radio-label">high, experiencing changes in sleeping and eating behavior.</span>
+            <input type="radio" name="anx" class= "form-radio" id ="stress3" onclick ="stress3();" value=3><span class="radio-label">high, experiencing changes in sleeping and eating behavior.</span>
 
             <br>
      
-           <input type="radio" name="anx" class= "form-radio" value=4><span class="radio-label">Really high, it translates in my physical body through tension/pain and changes in physical health as well as experiencing extreme changes in sleeping and eating behavior. minor inconveniences feel like the end of the world.</span>
+           <input type="radio" name="anx" class= "form-radio" id ="stress4" onclick ="stress4();" value=4><span class="radio-label">Really high, it translates in my physical body through tension/pain and changes in physical health as well as experiencing extreme changes in sleeping and eating behavior. minor inconveniences feel like the end of the world.</span>
           
         </br>
-        <button type="button" onclick="display3()"> 
-            Submit3
-        </button> 
+       
             </p>
             
     </div>
 
-    <div id="disp3"style= 
-    "color:green; font-size:18px; font-weight:bold;"> 
-
-</div> 
+  
 
 
 

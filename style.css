@@ -58,12 +58,16 @@ body {
 
 
 .salary{
- 
+  position: absolute;
+  left: 0;
+    top: 670px;
  width: 450px;
   margin: 30px;
   background-color: #ffffff;
   border: 1px solid #ffffff;
   opacity: 0.6;
+ 
+  margin: 2%;
   margin-top:relative ;
   border-radius: 30px;
   
@@ -72,7 +76,9 @@ body {
 
  
   .time{
-
+    position: absolute;
+    left: 0;
+    top: 430px;
     width: 450px;
     margin: 30px;
     background-color: #ffffff;
@@ -83,8 +89,13 @@ body {
 }
   
 .stress{
+  position: absolute;
+  left: 0;
+  top:5;
+  /* top: 500px; */
+    width: 450px;
+    
 
-  width: 450px;
   margin: 30px;
   background-color: #ffffff;
   border: 1px solid #ffffff;
@@ -120,8 +131,17 @@ body {
     background-color: #e3ffcf;
     color: black;
   }
+.vid{
+  position: absolute;
+   left:0;
+   
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
 
-  #camera,#sensor,#videoElement {
+
+}
+  #capture,#sensor,#video {
     position: absolute;
    left:0;
    
@@ -130,7 +150,7 @@ body {
     object-fit: cover;
    
   }
-  #sensor,#videoElement{
+  #sensor,#video{
 
     transform: scaleX(-1);
     filter: FlipH;

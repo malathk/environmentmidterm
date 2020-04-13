@@ -28,6 +28,7 @@ vidHeight = video.videoHeight;
 return setInterval(()=>{
 ctx.drawImage(video,0,0,vidWidth,vidHeight);
 let pixels= ctx.getImageData(0,0,vidWidth,vidHeight).data;
+console.log(pixels.length);
 ctx.globalAlpha=0.8;
 pixels= little(pixels);
 ctx.putImageData(pixels,0,0);
@@ -109,20 +110,17 @@ function good(){
   document.querySelector('video').style.filter = "blur(0.5px) brightness(150%) contrast(90%)";
 
 }
-function draw(){
-  document.querySelector('video').paintToCanvas();
-  document.querySelector('video').little();
-  
-}
+
 
 
 function little(pixels){
 
-  for (i = 0; i < pixels.data.length; i = i + 4) {
-    var red = pixels.data[i + 0];
-     var green = pixels.data[i + 1]+100 ;
-     var blue = pixels.data[i + 2];
-     var alpha = pixels.data[i + 3];
+  for (let i = 0; i < pixels.length; i += 4) {
+    console.log("its working");
+    var red = pixels[i + 0];
+     var green = pixels[i + 1]+100;
+     var blue = pixels[i + 2];
+     var alpha = pixels[i + 3];
    }
   
   return pixels;
